@@ -55,4 +55,9 @@ body {
 .prev i, .next i {
     font-size: 50px;
     color: black;
+    cursor: pointer;
+}
+
+.prev i:active, .next i:hover {
+    color: white;
 }
