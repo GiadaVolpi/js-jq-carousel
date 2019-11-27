@@ -10,32 +10,31 @@ $ (document).ready (function () {
         var imgSuccessiva = imgAttuale.next ("img");
 
         // prendo il cerchio attivo (deve avere il pieno visibile e il vuoto invisibile)
-        var cerchioAttivo = $ ("#circle .pieno.circle-active #circle .vuoto.circle.disactive");
+        var dotActive = $ (".circle.circle-active")
 
         // prendo il cerchio successivo a quello attivo
-        var cerchioSuccessivo = cerchioAttivo.next ();
+        var dotSuccessivo = dotActive.next ();
 
         // rendo invisibile la foto attuole
         imgAttuale.removeClass ("active");
 
         // disattivo il cerchio attivo
-        $ (".pieno.circle-active") cerchioAttivo.removeClass ("circle-active");
-        $ (".vuoto.circle-disactive") cerchioAttivo.removeClass ("circle-disactive");
+        dotActive.removeClass ("circle-active")
 
         // se l'immagine successiva non esiste
         if (imgSuccessiva.length == 0) {
             // rendo nuovamente visibile la prima del ciclo
             imgSuccessiva = $ (".restart");
 
-            $ (".circle-first .pieno") cerchioSuccessivo.addClass ("circle-active");
-            $ (".circle-first .vuoto") cerchioSuccessivo.addClass ("circle.disactive");
+            // rendo nuovamente visibile il primo dot
+            dotSuccessivo = $ (".circle-first")
         }
 
         // rendo visibile la foto successiva
         imgSuccessiva.addClass ("active");
 
-        $ (".pieno") cerchioSuccessivo.addClass ("circle-active")
-        $ (".vuoto") cerchioSuccessivo.addClass ("circle.disactive")
+        // rendo attivo il dot dotSuccessivo
+        dotSuccessivo.addClass ("circle-active");
     });
 
 

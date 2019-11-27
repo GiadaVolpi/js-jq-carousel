@@ -91,20 +91,16 @@ body {
     display: none;
 }
 
-.circle i.pieno.circle-active {
-    display: block;
-}
-
 .circle i.vuoto {
     display: block;
 }
 
-.circle i.vuoto.circle-disactive {
-    display: none;
+.circle-active i.pieno {
+    display: block;
 }
 
-.circle-active {
-    display: block;
+.circle-active i.vuoto {
+    display: none;
 }
 
 @media screen and (max-width: 1440px) {
