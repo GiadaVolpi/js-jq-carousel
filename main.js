@@ -4,7 +4,7 @@ $ (document).ready (function () {
 
     $ (".next").click (function () {
         // prendo l'immagine attualmente visibile
-        var imgAttuale = $ ("#slider img.active");
+        var imgAttuale = $ ("#slide img.active");
 
         // prendo l'immagine successiva a quella attualmente visibile
         var imgSuccessiva = imgAttuale.next ("img");
@@ -25,7 +25,7 @@ $ (document).ready (function () {
 
     $ (".prev").click (function () {
         // prendo l'immagine attualmente visibile
-        var imgAttuale = $ ("#slider img.active");
+        var imgAttuale = $ ("#slide img.active");
 
         // prendo l'immagine precedente a quella attuale
         var imgPrecedente = imgAttuale.prev ("img");
