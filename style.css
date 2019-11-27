@@ -87,8 +87,12 @@ body {
     color: white;
 }
 
-.circle i.active {
+.circle i.invisible {
     display: none;
+}
+
+.circle-active {
+    display: block;
 }
 
 @media screen and (max-width: 1440px) {
