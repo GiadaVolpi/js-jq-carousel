@@ -87,7 +87,19 @@ body {
     color: white;
 }
 
-.circle i.invisible {
+.circle i.pieno {
+    display: none;
+}
+
+.circle i.pieno.circle-active {
+    display: block;
+}
+
+.circle i.vuoto {
+    display: block;
+}
+
+.circle i.vuoto.circle-disactive {
     display: none;
 }
 
